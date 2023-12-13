@@ -19,6 +19,8 @@ for i in range(4):
     cv2.imshow("image", img)
     if cv2.waitKey(5) & 0xFF == ord('q'):
         break
+    drone.move_forward(30)
     drone.rotate_clockwise(45)
+    
 
 drone.land
